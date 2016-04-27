@@ -63,28 +63,6 @@ else if(!isset($_SESSION["aut"]))
 </table>
 </form>
 <?php
-/*echo
-"
-<style>
-div.res table {
-    border-collapse: collapse;
-    width: 50%;
-}
-
-div.res th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-div.res tr:nth-child(even){background-color: #FFCCFF}
-
-div.res th {
-    background-color: #996633;
-    color: white;
-}
-</style>
-
-";*/
 $conn=mysqli_connect("localhost","root","","library");
 $name=$_POST["name"];
 $topic=$_POST["topic"];
