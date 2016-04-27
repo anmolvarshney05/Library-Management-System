@@ -1,0 +1,7 @@
+Replace Username, Password, StaffID, Address, FirstName, MiddleName, LastName with their actual values.
+MiddleName and LastName can be empty(or NULL).
+StaffID is an Integer of length 6.
+
+INSERT INTO AUTHENTICATION VALUES(Username, Password);
+INSERT INTO STAFF VALUES(Address, FirstName, MiddleName, LastName, StaffID);
+INSERT INTO LOGIN VALUES(StaffID, Username, Password);
