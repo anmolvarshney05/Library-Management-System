@@ -2,14 +2,13 @@
 include "session.php";
 if($_SESSION['login']!=1)
 {
-		$_SESSION['red']=1;
+	$_SESSION['red']=1;
 	header("location:index.php");
 	exit(0);
 }
 else if(!isset($_SESSION["aut"]))
 {
 	$_SESSION["aut"]=0;
-	
 }
 ?>
 <html>
@@ -21,7 +20,7 @@ else if(!isset($_SESSION["aut"]))
 </head>
 <body style="background-color:white;">
 <h1 style="text-align:center;color:white;">LIBRARY MANAGEMENT </h1>
-<div >
+<div>
 <a  href="logout.php" style=" width: 5%;">LOGOUT</a>
 <a  href="addMember.php" style="width: 10%;">ADD MEMBER</a>
 <a  href="searchBook.php" style="background-color:#CC3300; width: 10%;">BOOK SEARCH</a>
@@ -59,8 +58,6 @@ else if(!isset($_SESSION["aut"]))
 <td><input type="submit" name="stopic" value="SEARCH"/></td>
 <td><input type="submit" name="sauthor" value="SEARCH"/></td>
 </tr>
-
-
 </table>
 </form>
 </body>

@@ -2,7 +2,7 @@
 include "session.php";
 if($_SESSION['login']!=1)
 {
-		$_SESSION['red']=1;
+	$_SESSION['red']=1;
 	header("location:index.php");
 	
 }
@@ -87,7 +87,6 @@ TOPIC</td>
 <td><td><td>
 <td><input type="submit" class="btn" name="section"/></td>
 </tr>
-
 </table>
 </form>
 <?php

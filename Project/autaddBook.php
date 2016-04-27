@@ -78,5 +78,4 @@ else
 	$_SESSION['err']=$conn->error;
 	header("location:addBook.php");
 }
-
 ?>

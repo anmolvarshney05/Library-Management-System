@@ -1,7 +1,6 @@
 <?php
 include('session.php');
 ?>
-
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
@@ -59,7 +58,7 @@ if(isset($_SESSION["login"]))
 {	
 	if($_SESSION["login"]===2)
 	{
-	 echo "WRONG CREDENTIALS";
+		echo "WRONG CREDENTIALS";
 	}	 
 }
 ?>

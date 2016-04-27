@@ -2,7 +2,7 @@
 include "session.php";
 if($_SESSION['login']!=1)
 {
-		$_SESSION['red']=1;
+	$_SESSION['red']=1;
 	header("location:index.php");
 	
 }
@@ -44,7 +44,6 @@ else if(!isset($_SESSION["aut"]))
     <th>RETURN BOOK</th> 
   </tr>
 <tr>
-
 <td>MEM_ID</td><td>     <input type="text" name="memid1"/></td>
 <td>STAFF_ID </td><td>  <input type="text" name="staffid2" value="
 <?php
@@ -52,7 +51,6 @@ echo $_SESSION['sid'];
 ?>"
 /></td>
 </tr>
-
 <tr>
 <td>BOOK_ID</td><td>   <input type="text" name="bookid1"/></td>
 <td>BOOK_ID  </td><td> <input type="text" name="bookid2"/></td>
@@ -74,14 +72,12 @@ echo date('Y-m-d', strtotime("+7 days"));
 ?>
 " /></td>
 </tr>
-
 <tr>
 <td>ISSUE DATE</td><td><input type="text" name="issuedate" value="<?php  
 echo date('Y-m-d', strtotime("+0 days"));
 ?>"/></td>
 <td><input type="submit" name="return" value="RETURN" /></td>
 </tr>
-
 <tr>
 <td>RETURN DATE</td><td><input type="text" name="returndate1" value="<?php  
 echo date('Y-m-d', strtotime("+7 days"));
@@ -89,9 +85,6 @@ echo date('Y-m-d', strtotime("+7 days"));
 "/></td>
 <td></td>
 </tr>
-
-
-
 <tr>
 <td><input type="submit" name="issue" value="ISSUE"/></td>
 <td></td>

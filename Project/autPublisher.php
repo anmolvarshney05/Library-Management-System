@@ -46,8 +46,7 @@ if($res2->num_rows==0)
 		$_SESSION['aut']=$pid;
 		$_SESSION['msg']="Publisher <b>".$name."</b> is assigned Publisher Id:<b> ".$pid."</b>"; 
 	}
-	header("location:addPublisher.php");
-	
+	header("location:addPublisher.php");	
 }
 else
 {

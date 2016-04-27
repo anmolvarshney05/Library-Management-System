@@ -2,7 +2,7 @@
 include "session.php";
 if($_SESSION['login']!=1)
 {
-		$_SESSION['red']=1;
+	$_SESSION['red']=1;
 	header("location:index.php");
 	
 }

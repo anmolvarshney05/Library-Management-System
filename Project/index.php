@@ -1,7 +1,6 @@
 <?php
 include 'session.php' ;
 ?>
-
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
@@ -73,10 +72,8 @@ if(isset($_SESSION['login']))
  }	 
 }
 ?>
-
 </td>
 <td></td>
-
 </tr>
 </table>
 </form>
@@ -91,6 +88,5 @@ unset($_SESSION['red']);
 echo "</table>";
 }
 ?>
-
 </body>
 </html>

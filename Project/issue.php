@@ -2,7 +2,7 @@
 include "session.php";
 if($_SESSION['login']!=1)
 {
-		$_SESSION['red']=1;
+	$_SESSION['red']=1;
 	header("location:index.php");
 	
 }
@@ -46,8 +46,6 @@ else if(!isset($_SESSION["aut"]))
 <tr>
 <td><input type="submit" name="sname" value="SEARCH" style="float:right;width:30%;height:50px;border:solid;border-radius:10px;"/></td>
 </tr>
-
-
 </table>
 </form>
 </body>
